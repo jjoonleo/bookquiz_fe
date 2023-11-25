@@ -1,0 +1,79 @@
+.nav-menu {
+  position: relative;
+  height: 100%;
+  width: auto;
+  padding: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  flex: fit-content 1 1;
+}
+
+.nav-menu span {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.nav-menu>a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.menu-icon-container {
+  width: 80px;
+}
+
+.menu-icon-container .menu-icon {
+  padding: 25px;
+  height: 100%;
+}
+
+.nav-menu:not(:first-child):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -10px;
+  background-color: #e5e5e5;
+  width: 1px;
+  height: 20px;
+}
+
+.nav-menu .sub span {
+  display: block;
+}
+
+.sub .sub-bg {
+  display: flex;
+  flex-direction: column;
+  background-color: #161616;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.sub-bg .ls a {
+  display: block;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: -1px;
+  padding: 4px 0 4px 16px;
+}
+
+.sub {
+  display: none;
+  width: 100%;
+}
+
+.nav-menu:hover .sub {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  display: block;
+}
